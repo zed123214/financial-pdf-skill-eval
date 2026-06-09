@@ -1,0 +1,32 @@
+# python run.py --cases testcases/pdf_cases/huadian_real_las_fixture.yaml --backend fixture --pipeline
+
+case_id: huadian_real_las_fixture
+name: 华电光大 real_las standard output fixture
+description: OpenClaw 触发新版 Skill 后生成的非标准业绩报表输出，用于 unknown table 分类和输出契约测试
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/华电光大
+ground_truth: evaluation/ground_truth/huadian_manual_gt.json
+count_as_real_evaluation: false
+tags:
+  - offline
+  - real_las_fixture
+  - non_standard_report
+  - fixture
+thresholds:
+  min_raw_table_count: 1
+validations:
+  - type: output_contract
+    profile: standard
+  - type: data_authenticity
+    require_non_synthetic: true
+    expected_backend: real_las
+  - type: table_stat_ge
+    field: raw_table_count
+    expected: 1
+  - type: table_stat_eq
+    field: financial_table_count
+    expected: 0
+  - type: metric_stat_eq
+    field: metric_record_count
+    expected: 0

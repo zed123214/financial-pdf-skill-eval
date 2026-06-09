@@ -1,0 +1,52 @@
+{
+  "case_id": "input_017_header_footer_noise",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "财务指标摘要",
+      "item": "营业收入",
+      "period": "2025年度",
+      "expected": "6,318.44",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 营业收入 col 2025年度"
+    },
+    {
+      "statement": "财务指标摘要",
+      "item": "毛利",
+      "period": "2025年度",
+      "expected": "2,114.70",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 毛利 col 2025年度"
+    },
+    {
+      "statement": "财务指标摘要",
+      "item": "期间费用",
+      "period": "2025年度",
+      "expected": "1,025.30",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 期间费用 col 2025年度"
+    },
+    {
+      "statement": "财务指标摘要",
+      "item": "利润总额",
+      "period": "2025年度",
+      "expected": "1,089.40",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 利润总额 col 2025年度"
+    },
+    {
+      "statement": "财务指标摘要",
+      "item": "净利润",
+      "period": "2025年度",
+      "expected": "926.08",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 净利润 col 2025年度"
+    }
+  ]
+}

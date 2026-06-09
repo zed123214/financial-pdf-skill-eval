@@ -1,0 +1,4 @@
+rule_id: multi_header_table_rebuilder
+description: 当表格前两行均包含日期/期间字段时，合并为多级表头并展开 period 列
+trigger: table_top_rows_contain_period_tokens
+action: merge_into_multilevel_header

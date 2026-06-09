@@ -1,0 +1,34 @@
+# backend: fixture means run/import real_las or mock outputs into data/real_las_outputs/<case_id> first.
+# Synthetic cases intentionally omit data_authenticity + require_non_synthetic: true.
+# count_as_real_evaluation: false marks these as synthetic expansion scenarios.
+case_id: input_011_cross_page_income_statement
+name: 跨页合并利润表（合成）
+description: Synthetic eval PDF; source-of-truth in tools/generate_eval_pdfs.py
+input_pdf: data/samples/input_011_cross_page_income_statement.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_011_cross_page_income_statement
+ground_truth: evaluation/ground_truth/input_011_cross_page_income_statement_manual_gt.json
+count_as_real_evaluation: false
+tags:
+  - offline
+  - synthetic_pdf
+  - complex
+  - cross_page
+  - income_statement
+validations:
+  -
+    type: output_contract
+    profile: standard
+  -
+    type: table_stat_ge
+    field: financial_table_count
+    expected: 1
+  -
+    type: metric_stat_ge
+    field: metric_record_count
+    expected: 5
+  -
+    type: gt_numeric_accuracy_ge
+    threshold: 0.8
+    skip_if_no_ground_truth: true

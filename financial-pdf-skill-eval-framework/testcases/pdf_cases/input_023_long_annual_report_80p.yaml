@@ -1,0 +1,19 @@
+case_id: input_023_long_annual_report_80p
+name: 80 页长文档成本设计用例
+description: Extra synthetic PDF; 80-page annual-report design case, no imported fixture
+  yet.
+input_pdf: data/samples/input_023_long_annual_report_80p.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_023_long_annual_report_80p
+ground_truth: evaluation/ground_truth/input_023_long_annual_report_80p_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- long_report
+- cost_performance
+design_expectation: 长文档成本/抽样 GT；未实际跑测。
+validations: []

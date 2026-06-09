@@ -1,0 +1,6 @@
+{
+  "case_id": "input_018_meeting_minutes_no_table",
+  "source": "manual_verified",
+  "note": "Manual verification date: 2026-06-04. Checked against data/samples/input_018_meeting_minutes_no_table.pdf text; metrics[] is empty because the document has no financial table and must not enter financial_accuracy.",
+  "metrics": []
+}

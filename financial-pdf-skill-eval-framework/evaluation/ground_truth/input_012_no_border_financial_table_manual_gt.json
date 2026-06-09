@@ -1,0 +1,52 @@
+{
+  "case_id": "input_012_no_border_financial_table",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "主要财务指标简表",
+      "item": "基本每股收益",
+      "period": "2025年度",
+      "expected": "1.26",
+      "unit": "元",
+      "page": 1,
+      "evidence": "main_table 基本每股收益 col 2025年度"
+    },
+    {
+      "statement": "主要财务指标简表",
+      "item": "稀释每股收益",
+      "period": "2025年度",
+      "expected": "1.24",
+      "unit": "元",
+      "page": 1,
+      "evidence": "main_table 稀释每股收益 col 2025年度"
+    },
+    {
+      "statement": "主要财务指标简表",
+      "item": "扣非后基本每股收益",
+      "period": "2025年度",
+      "expected": "1.08",
+      "unit": "元",
+      "page": 1,
+      "evidence": "main_table 扣非后基本每股收益 col 2025年度"
+    },
+    {
+      "statement": "主要财务指标简表",
+      "item": "每股经营现金流量",
+      "period": "2025年度",
+      "expected": "2.73",
+      "unit": "元",
+      "page": 1,
+      "evidence": "main_table 每股经营现金流量 col 2025年度"
+    },
+    {
+      "statement": "主要财务指标简表",
+      "item": "每股净资产",
+      "period": "2025年度",
+      "expected": "8.96",
+      "unit": "元",
+      "page": 1,
+      "evidence": "main_table 每股净资产 col 2025年度"
+    }
+  ]
+}

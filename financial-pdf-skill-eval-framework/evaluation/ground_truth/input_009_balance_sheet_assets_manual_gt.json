@@ -1,0 +1,79 @@
+{
+  "case_id": "input_009_balance_sheet_assets",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "合并资产负债表",
+      "item": "货币资金",
+      "period": "2025-12-31",
+      "expected": "8,456.22",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 货币资金 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "交易性金融资产",
+      "period": "2025-12-31",
+      "expected": "1,240.00",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 交易性金融资产 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "应收账款",
+      "period": "2025-12-31",
+      "expected": "5,318.76",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 应收账款 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "存货",
+      "period": "2025-12-31",
+      "expected": "6,790.45",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 存货 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "流动资产合计",
+      "period": "2025-12-31",
+      "expected": "21,805.43",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 流动资产合计 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "固定资产",
+      "period": "2025-12-31",
+      "expected": "13,602.18",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 固定资产 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "非流动资产合计",
+      "period": "2025-12-31",
+      "expected": "15,733.06",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 非流动资产合计 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "2025-12-31",
+      "expected": "37,538.49",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 资产总计 col 2025-12-31"
+    }
+  ]
+}

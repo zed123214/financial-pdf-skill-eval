@@ -1,0 +1,59 @@
+{
+  "case_id": "paper_skill_evolver",
+  "source": "todo_manual_verify",
+  "note": "SkillEvolver 论文摘要关键数字与章节锚点。晋升 manual_verified 前不参与 financial_accuracy；当前以 text_contains 为主。",
+  "metrics": [
+    {
+      "statement": "Abstract 结果",
+      "item": "SkillsBench accuracy",
+      "period": "SkillEvolver",
+      "expected": "56.8",
+      "unit": "percent",
+      "page": 1,
+      "evidence": "abstract: 56.8% accuracy vs 43.6% human skills"
+    },
+    {
+      "statement": "Abstract 结果",
+      "item": "SkillsBench accuracy",
+      "period": "human curated skills",
+      "expected": "43.6",
+      "unit": "percent",
+      "page": 1,
+      "evidence": "abstract baseline human skills"
+    },
+    {
+      "statement": "Abstract 结果",
+      "item": "SkillsBench accuracy",
+      "period": "no-skill baseline",
+      "expected": "29.9",
+      "unit": "percent",
+      "page": 1,
+      "evidence": "abstract no-skill baseline"
+    },
+    {
+      "statement": "Abstract 结果",
+      "item": "KernelBench mean speedup",
+      "period": "SkillEvolver",
+      "expected": "1.51",
+      "unit": "ratio",
+      "page": 1,
+      "evidence": "abstract KernelBench speedup"
+    },
+    {
+      "statement": "正文锚点",
+      "item": "论文标题",
+      "period": "n/a",
+      "expected": "",
+      "page": 1,
+      "evidence": "parsed.md 含 SKILLEVOLVER / SkillEvolver（text_contains）"
+    },
+    {
+      "statement": "正文锚点",
+      "item": "机构",
+      "period": "n/a",
+      "expected": "",
+      "page": 1,
+      "evidence": "parsed.md 含 Tsinghua University（解析后人工核对）"
+    }
+  ]
+}

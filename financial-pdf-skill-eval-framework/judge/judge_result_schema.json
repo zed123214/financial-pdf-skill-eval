@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "assessment_skill_judge_result",
+  "description": "LLM-as-a-Judge 辅助评分结果。仅诊断信号，不参与 weighted_score 重算。",
+  "type": "object",
+  "required": [
+    "case_id",
+    "judge_version",
+    "reading_order_score",
+    "table_structure_score",
+    "evidence_alignment_score",
+    "deduction_items",
+    "confidence",
+    "mode"
+  ],
+  "properties": {
+    "case_id": { "type": "string" },
+    "judge_version": { "type": "string" },
+    "reading_order_score": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "table_structure_score": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "evidence_alignment_score": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "deduction_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dimension", "reason"],
+        "properties": {
+          "dimension": {
+            "type": "string",
+            "enum": ["reading_order", "table_structure", "evidence_alignment"]
+          },
+          "reason": { "type": "string" },
+          "evidence": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "mode": { "type": "string", "enum": ["mock", "live", "skipped"] }
+  }
+}

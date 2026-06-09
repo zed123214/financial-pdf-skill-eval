@@ -1,0 +1,19 @@
+case_id: input_020_corrupted_pdf
+name: 损坏 PDF 异常设计用例
+description: Extra synthetic PDF; corrupted PDF abnormal design case. No fixture/error_result
+  observed yet.
+input_pdf: data/samples/input_020_corrupted_pdf.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_020_corrupted_pdf
+ground_truth: evaluation/ground_truth/input_020_corrupted_pdf_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- abnormal
+- corrupted
+design_expectation: 不得臆造 FILE_CORRUPTED 等错误码；等待实测 error_result。
+validations: []

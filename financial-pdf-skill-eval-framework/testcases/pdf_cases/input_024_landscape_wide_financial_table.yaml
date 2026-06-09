@@ -1,0 +1,19 @@
+case_id: input_024_landscape_wide_financial_table
+name: 横向宽表财务指标设计用例
+description: Extra synthetic PDF; landscape wide financial table design case, no imported
+  fixture yet.
+input_pdf: data/samples/input_024_landscape_wide_financial_table.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_024_landscape_wide_financial_table
+ground_truth: evaluation/ground_truth/input_024_landscape_wide_financial_table_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- complex
+- landscape
+design_expectation: 宽表列对齐与期间识别；已补 PDF 文本抽样 GT，仍待人工复核。
+validations: []

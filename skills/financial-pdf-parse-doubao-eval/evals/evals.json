@@ -1,0 +1,76 @@
+{
+  "skill_name": "financial-pdf-parse-doubao-eval",
+  "version": "0.3.0",
+  "evals": [
+    {
+      "id": "financial_pdf_detail_local",
+      "prompt": "本地 PDF detail 模式解析。",
+      "expected_output": "生成 raw、normalized、evaluation、meta 四类输出。",
+      "files": ["<PDF_PATH>"],
+      "success_criteria": ["parse_mode=detail", "输出协议完整", "生成 evaluation_report.md"]
+    },
+    {
+      "id": "financial_pdf_auto_scanned",
+      "prompt": "本地 PDF auto 模式解析扫描件。",
+      "expected_output": "auto 解析为 detail，并记录原因。",
+      "files": ["<PDF_PATH>"],
+      "success_criteria": ["run_meta.parse_mode=detail", "run_meta.parse_mode_reason 存在", "生成 financial_summary.json"]
+    },
+    {
+      "id": "financial_pdf_partial_pages",
+      "prompt": "PDF 只解析部分页 start_page / num_pages。",
+      "expected_output": "submit data 包含分页参数，价格按页数预估。",
+      "files": ["<PDF_PATH>"],
+      "success_criteria": ["支持 --start-page", "支持 --num-pages", "estimated_price 基于解析页数"]
+    },
+    {
+      "id": "poll_existing_task_short",
+      "prompt": "已有 task_id 的短轮询。",
+      "expected_output": "短轮询不死循环，完成时保存 raw/result.json，未完成时返回 pending。",
+      "files": [],
+      "success_criteria": ["poll_task.py 支持 --task-id", "支持 --max-seconds", "失败保存 meta/error_result.json"]
+    },
+    {
+      "id": "official_output_offline_postprocess",
+      "prompt": "官方 output 离线后处理。",
+      "expected_output": "execution_backend=official_output_mock，output_source=external_official_output。",
+      "files": ["<OFFICIAL_OUTPUT_DIR>/result.json", "<OFFICIAL_OUTPUT_DIR>/parsed.md", "<OFFICIAL_OUTPUT_DIR>/pages_detail.json"],
+      "success_criteria": ["不要求 LAS_API_KEY", "count_as_real_evaluation=false", "生成 normalized_tables.json"]
+    },
+    {
+      "id": "financial_table_normalization",
+      "prompt": "金融表格标准化。",
+      "expected_output": "normalized_tables.json 包含 tables、columns、rows。",
+      "files": ["<PARSED_MD_PATH>"],
+      "success_criteria": ["至少抽取 1 个表", "表格列名去重", "识别财务表名"]
+    },
+    {
+      "id": "balance_sheet_equation_check",
+      "prompt": "资产负债表勾稽检查。",
+      "expected_output": "quality_checks.json 包含 balance_equation_check。",
+      "files": ["<PARSED_MD_PATH>"],
+      "success_criteria": ["balance_check_pass_rate 存在", "失败 message 可解释", "不以全 0 指标冒充成功"]
+    },
+    {
+      "id": "missing_las_api_key",
+      "prompt": "异常：缺少 LAS_API_KEY。",
+      "expected_output": "返回 AUTH_MISSING，保存 meta/error_result.json。",
+      "files": ["<PDF_PATH>"],
+      "success_criteria": ["error_code=AUTH_MISSING", "不调用 submit", "提示配置 LAS_API_KEY"]
+    },
+    {
+      "id": "invalid_non_pdf_input",
+      "prompt": "异常：非 PDF 文件。",
+      "expected_output": "返回 INVALID_FILE_TYPE。",
+      "files": ["<NON_PDF_PATH>"],
+      "success_criteria": ["error_code=INVALID_FILE_TYPE", "不上传文件", "提示仅支持 PDF"]
+    },
+    {
+      "id": "missing_markdown_output",
+      "prompt": "异常：result.json 缺少 data.markdown。",
+      "expected_output": "parsed_markdown_non_empty_check 失败或 validate_outputs.py 失败。",
+      "files": ["examples/sample_output_schema.json"],
+      "success_criteria": ["发现 parsed.md 缺失或为空", "不生成 synthetic 冒充真实结果", "保存错误信息"]
+    }
+  ]
+}

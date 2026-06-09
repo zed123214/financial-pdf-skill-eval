@@ -1,0 +1,31 @@
+# SkillOpt 单配置文件（Agent B / Step 4-6）。
+#
+# 设计：
+#   - 复用现有 testcases，不新建 cases/ 目录、不造假 case。
+#   - splits 在运行时解析；缺失的 case 写入 GateResult.missing_cases，不崩溃。
+#   - P0 默认 dry_run_only：patch 只 propose；apply 仅在临时 workspace；
+#     gate 通过才允许 snapshot 到 skill_versions/skill_v1_<label>。
+#
+# 主 fixture（P0 必须存在）：testcases/pdf_cases/byd_real_las_fixture.yaml
+
+splits:
+  train:
+    - testcases/pdf_cases/byd_real_las_fixture.yaml
+  validation:
+    - testcases/pdf_cases/huadian_real_las_fixture.yaml   # 可选；缺失走兜底规则
+  regression:
+    - testcases/pdf_cases/byd_real_las_fixture.yaml
+    - testcases/pdf_cases/smoke_skill_standard.yaml       # 可选；缺失走兜底规则
+
+gate:
+  require_output_contract_pass: true
+  require_data_authenticity_pass: true
+  min_weighted_score_vs_baseline: 0.0      # candidate 不能低于 baseline
+  min_numeric_accuracy_vs_baseline: 0.0    # 有 GT 时才比对
+  require_no_abnormal_regression: true
+  require_improvement_on: []               # validation split 为空时必须保持 []
+
+patch:
+  dry_run_only: true                       # P0 默认 true：propose-only，不 apply 到生产 judge/
+  workspace_root: .skillopt_workspace      # 临时目录，gitignore（仅含 Skill 包）
+  baseline_version: skill_v0_baseline      # candidate 复制来源（skill_versions/ 下）

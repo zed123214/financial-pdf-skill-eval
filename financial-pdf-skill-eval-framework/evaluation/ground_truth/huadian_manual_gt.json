@@ -1,0 +1,52 @@
+{
+  "case_id": "huadian",
+  "source": "manual_verified",
+  "note": "华电光大 PDF 当前 Skill 解析为 unknown_table，financial_table_count=0、metric_record_count=0。该样本不是标准业绩报表，作为非标准结构 fixture 使用，不计入准确率分母。本文件保留为空，便于后续人工补充。",
+  "metrics": [
+    {
+      "statement": "业绩报表",
+      "item": "营业总收入",
+      "period": "2026-03-31",
+      "expected": "5419万",
+      "unit": "元",
+      "page": 1,
+      "evidence": "原始 PDF 第1页业绩报表，2026-03-31 期间营业总收入"
+    },
+    {
+      "statement": "业绩报表",
+      "item": "净利润",
+      "period": "2026-03-31",
+      "expected": "206.6万",
+      "unit": "元",
+      "page": 1,
+      "evidence": "原始 PDF 第1页业绩报表，2026-03-31 期间净利润"
+    },
+    {
+      "statement": "业绩报表",
+      "item": "营业总收入",
+      "period": "2025-12-31",
+      "expected": "4.05亿",
+      "unit": "元",
+      "page": 1,
+      "evidence": "原始 PDF 第1页业绩报表，2025-12-31 期间营业总收入"
+    },
+    {
+      "statement": "业绩报表",
+      "item": "净利润",
+      "period": "2025-12-31",
+      "expected": "6219万",
+      "unit": "元",
+      "page": 1,
+      "evidence": "原始 PDF 第1页业绩报表，2025-12-31 期间净利润"
+    },
+    {
+      "statement": "业绩报表",
+      "item": "每股净资产",
+      "period": "2025-12-31",
+      "expected": "2.5991",
+      "unit": "元",
+      "page": 1,
+      "evidence": "原始 PDF 第1页业绩报表，2025-12-31 期间每股净资产"
+    }
+  ]
+}

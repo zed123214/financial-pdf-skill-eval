@@ -1,0 +1,19 @@
+case_id: input_029_scanned_image_only_financial_report
+name: 纯图片扫描财务表设计用例
+description: Extra synthetic PDF; image-only scanned financial report design case,
+  no imported fixture yet.
+input_pdf: data/samples/input_029_scanned_image_only_financial_report.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_029_scanned_image_only_financial_report
+ground_truth: evaluation/ground_truth/input_029_scanned_image_only_financial_report_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- scan
+- image_only
+design_expectation: OCR 图片表格解析；未实际跑测。
+validations: []

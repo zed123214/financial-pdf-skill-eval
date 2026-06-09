@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SkillOpt patch proposal",
+  "description": "SkillOpt dry-run patch 提案格式。target_scope 决定 target_file 解析根目录；target_file 必须为相对路径，禁止 '..' 或绝对路径。",
+  "type": "object",
+  "required": ["patch_id", "target_scope", "target_file", "edit_type", "reason", "change"],
+  "additionalProperties": true,
+  "properties": {
+    "patch_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_.-]+$"
+    },
+    "target_scope": {
+      "type": "string",
+      "enum": ["skill", "judge"]
+    },
+    "target_file": {
+      "type": "string",
+      "minLength": 1,
+      "description": "相对 target_scope 根目录的路径；禁止绝对路径与 '..'。"
+    },
+    "edit_type": {
+      "type": "string",
+      "enum": ["add", "replace", "delete"]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "change": {
+      "type": "object"
+    },
+    "expected_improvement": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "risk": {
+      "type": "string"
+    },
+    "source_trace": {
+      "type": "string"
+    }
+  }
+}

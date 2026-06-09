@@ -1,0 +1,43 @@
+{
+  "case_id": "input_027_cross_page_repeated_header",
+  "source": "todo_manual_verify",
+  "note": "Design-only GT skeleton. Metrics were transcribed from PDF text extraction on 2026-06-04; pending human review, so source remains todo_manual_verify and is excluded from financial_accuracy.",
+  "metrics": [
+    {
+      "statement": "Cross Page Financial Table with Repeated Header",
+      "item": "Financial line item 1",
+      "period": "2024",
+      "expected": "1,037",
+      "unit": "RMB thousand",
+      "page": 1,
+      "evidence": "PDF text page 1 row 1, column 2024"
+    },
+    {
+      "statement": "Cross Page Financial Table with Repeated Header",
+      "item": "Financial line item 18",
+      "period": "2024",
+      "expected": "1,666",
+      "unit": "RMB thousand",
+      "page": 2,
+      "evidence": "PDF text page 2 row 18, column 2024"
+    },
+    {
+      "statement": "Cross Page Financial Table with Repeated Header",
+      "item": "Financial line item 35",
+      "period": "2024",
+      "expected": "2,295",
+      "unit": "RMB thousand",
+      "page": 3,
+      "evidence": "PDF text page 3 row 35, column 2024"
+    },
+    {
+      "statement": "Cross Page Financial Table with Repeated Header",
+      "item": "Financial line item 51",
+      "period": "2023",
+      "expected": "2,685",
+      "unit": "RMB thousand",
+      "page": 3,
+      "evidence": "PDF text page 3 row 51, column 2023"
+    }
+  ]
+}

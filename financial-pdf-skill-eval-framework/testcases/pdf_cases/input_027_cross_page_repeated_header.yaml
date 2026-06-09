@@ -1,0 +1,20 @@
+case_id: input_027_cross_page_repeated_header
+name: 跨页重复表头设计用例
+description: Extra synthetic PDF; repeated-header cross-page table design case, no
+  imported fixture yet.
+input_pdf: data/samples/input_027_cross_page_repeated_header.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_027_cross_page_repeated_header
+ground_truth: evaluation/ground_truth/input_027_cross_page_repeated_header_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- complex
+- cross_page
+- repeated_header
+design_expectation: 跨页续表和重复表头合并；已补 PDF 文本抽样 GT，仍待人工复核。
+validations: []

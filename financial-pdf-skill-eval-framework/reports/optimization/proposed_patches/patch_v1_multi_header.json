@@ -1,0 +1,19 @@
+{
+  "patch_id": "patch_v1_multi_header",
+  "target_scope": "skill",
+  "target_file": "rules/multi_header_table_rebuilder.yaml",
+  "edit_type": "add",
+  "reason": "failure_trace 显示多级日期表头未展开为稳定二维结构，period 列识别失败",
+  "change": {
+    "rule_id": "multi_header_table_rebuilder",
+    "description": "当表格前两行均包含日期/期间字段时，合并为多级表头并展开 period 列",
+    "trigger": "table_top_rows_contain_period_tokens",
+    "action": "merge_into_multilevel_header"
+  },
+  "expected_improvement": [
+    "table_structure",
+    "financial_accuracy"
+  ],
+  "risk": "可能误合并正文中的日期行",
+  "source_trace": "byd_caibao"
+}

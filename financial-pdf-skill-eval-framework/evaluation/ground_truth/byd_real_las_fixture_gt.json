@@ -1,0 +1,87 @@
+{
+  "case_id": "byd_real_las_fixture",
+  "source": "manual_verified",
+  "note": "BYD 合并资产负债表测试用 GT（10 条 anchor metric）。数值来自原始 PDF 人工转录（单位：千元），与 financial_summary 中 statement/item/period 键对齐。用于 byd_real_las_fixture_gt_test.yaml 验证 financial_accuracy 链路。",
+  "metrics": [
+    {
+      "statement": "合并资产负债表",
+      "item": "货币资金",
+      "period": "12/31/2025",
+      "expected": "75,424,747",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "货币资金",
+      "period": "12/31/2024",
+      "expected": "102,738,734",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "应收账款",
+      "period": "12/31/2025",
+      "expected": "37,004,685",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "应收账款",
+      "period": "12/31/2024",
+      "expected": "62,298,988",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "流动资产合计",
+      "period": "12/31/2025",
+      "expected": "371,467,558",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "12/31/2025",
+      "expected": "883,729,883",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "12/31/2024",
+      "expected": "783,355,855",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "短期借款",
+      "period": "12/31/2025",
+      "expected": "38,484,710",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "负债合计",
+      "period": "12/31/2025",
+      "expected": "625,190,698",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "负债合计",
+      "period": "12/31/2024",
+      "expected": "584,667,646",
+      "page": 1,
+      "evidence": "原始 PDF 合并资产负债表，单位千元"
+    }
+  ]
+}

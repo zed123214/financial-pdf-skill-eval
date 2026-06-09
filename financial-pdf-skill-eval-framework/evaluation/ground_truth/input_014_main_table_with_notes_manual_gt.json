@@ -1,0 +1,79 @@
+{
+  "case_id": "input_014_main_table_with_notes",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "合并资产负债表",
+      "item": "应收账款",
+      "period": "2025-12-31",
+      "expected": "6,842.30",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 应收账款 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "存货",
+      "period": "2025-12-31",
+      "expected": "4,512.66",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 存货 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "流动资产合计",
+      "period": "2025-12-31",
+      "expected": "18,774.61",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 流动资产合计 col 2025-12-31"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "2025-12-31",
+      "expected": "29,440.38",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 资产总计 col 2025-12-31"
+    },
+    {
+      "statement": "应收账款账龄附注",
+      "item": "1年以内",
+      "period": "2025-12-31",
+      "expected": "5,930.12",
+      "unit": "万元",
+      "page": 2,
+      "evidence": "ar_age_note 1年以内 col 2025-12-31"
+    },
+    {
+      "statement": "应收账款账龄附注",
+      "item": "应收账款账龄合计",
+      "period": "2025-12-31",
+      "expected": "6,842.30",
+      "unit": "万元",
+      "page": 2,
+      "evidence": "ar_age_note 合计 col 2025-12-31"
+    },
+    {
+      "statement": "前五名客户附注",
+      "item": "前五名客户-客户A应收余额",
+      "period": "2025-12-31",
+      "expected": "1,420.00",
+      "unit": "万元",
+      "page": 2,
+      "evidence": "top_customers_note 客户A col 2025-12-31"
+    },
+    {
+      "statement": "前五名客户附注",
+      "item": "前五名客户应收余额合计",
+      "period": "2025-12-31",
+      "expected": "4,018.92",
+      "unit": "万元",
+      "page": 2,
+      "evidence": "top_customers_note 前五名合计 col 2025-12-31"
+    }
+  ]
+}

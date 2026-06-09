@@ -1,0 +1,19 @@
+case_id: input_021_blank_pdf
+name: 空白 PDF 异常/无内容设计用例
+description: Extra synthetic PDF; blank PDF design case. No imported fixture yet.
+input_pdf: data/samples/input_021_blank_pdf.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_021_blank_pdf
+ground_truth: evaluation/ground_truth/input_021_blank_pdf_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- abnormal
+- blank
+- no_table
+design_expectation: 期望无表；若未来出现 error_result 再登记 error_type_eq。
+validations: []

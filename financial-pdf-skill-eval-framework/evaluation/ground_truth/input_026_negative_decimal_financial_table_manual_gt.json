@@ -1,0 +1,34 @@
+{
+  "case_id": "input_026_negative_decimal_financial_table",
+  "source": "todo_manual_verify",
+  "note": "Design-only GT skeleton. Metrics were transcribed from PDF text extraction on 2026-06-04; pending human review, so source remains todo_manual_verify and is excluded from financial_accuracy.",
+  "metrics": [
+    {
+      "statement": "Negative and Decimal Financial Table",
+      "item": "Net profit",
+      "period": "2024",
+      "expected": "(1,234.56)",
+      "unit": "RMB mn",
+      "page": 1,
+      "evidence": "PDF text row Net profit, column 2024"
+    },
+    {
+      "statement": "Negative and Decimal Financial Table",
+      "item": "Foreign exchange gain/loss",
+      "period": "2024",
+      "expected": "-56.78",
+      "unit": "RMB mn",
+      "page": 1,
+      "evidence": "PDF text row Foreign exchange gain/loss, column 2024"
+    },
+    {
+      "statement": "Negative and Decimal Financial Table",
+      "item": "Operating margin",
+      "period": "2024",
+      "expected": "-3.25%",
+      "unit": "%",
+      "page": 1,
+      "evidence": "PDF text row Operating margin, column 2024"
+    }
+  ]
+}

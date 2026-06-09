@@ -1,0 +1,19 @@
+case_id: input_006_edge_sparse_rotated_watermark
+name: 稀疏旋转水印边界用例
+description: Synthetic eval PDF; sparse rotated watermark edge design case, no imported
+  fixture yet.
+input_pdf: data/samples/input_006_edge_sparse_rotated_watermark.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_006_edge_sparse_rotated_watermark
+ground_truth: evaluation/ground_truth/input_006_edge_sparse_rotated_watermark_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- edge
+- watermark
+design_expectation: 旋转/水印干扰下的解析边界；未实际跑测。
+validations: []

@@ -1,0 +1,11 @@
+[
+  {
+    "patch_id": "patch_v1_demo_reject",
+    "target_scope": "skill",
+    "target_file": "../../framework/scoring_model.py",
+    "reasons": [
+      "patch failed whitelist/schema check: unsafe target_file (absolute / '..' / drive not allowed): '../../framework/scoring_model.py'"
+    ],
+    "rejected_at": "2026-06-04T18:03:47+08:00"
+  }
+]

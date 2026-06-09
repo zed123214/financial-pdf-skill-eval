@@ -1,0 +1,34 @@
+{
+  "case_id": "input_024_landscape_wide_financial_table",
+  "source": "todo_manual_verify",
+  "note": "Design-only GT skeleton. Metrics were transcribed from PDF text extraction on 2026-06-04; pending human review, so source remains todo_manual_verify and is excluded from financial_accuracy.",
+  "metrics": [
+    {
+      "statement": "Landscape Wide Financial Statement",
+      "item": "Revenue",
+      "period": "2024 Q4",
+      "expected": "2,842.45",
+      "unit": "RMB mn",
+      "page": 1,
+      "evidence": "PDF text row Revenue, column 2024 Q4"
+    },
+    {
+      "statement": "Landscape Wide Financial Statement",
+      "item": "Operating profit",
+      "period": "2024 Q1",
+      "expected": "1,319.47",
+      "unit": "RMB mn",
+      "page": 1,
+      "evidence": "PDF text row Operating profit, column 2024 Q1"
+    },
+    {
+      "statement": "Landscape Wide Financial Statement",
+      "item": "Net profit",
+      "period": "2023 Q2",
+      "expected": "8,765.94",
+      "unit": "RMB mn",
+      "page": 1,
+      "evidence": "PDF text row Net profit, column 2023 Q2"
+    }
+  ]
+}

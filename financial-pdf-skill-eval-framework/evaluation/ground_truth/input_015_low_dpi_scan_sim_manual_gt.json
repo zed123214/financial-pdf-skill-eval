@@ -1,0 +1,52 @@
+{
+  "case_id": "input_015_low_dpi_scan_sim",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "利润表扫描件仿真",
+      "item": "营业收入",
+      "period": "2025年度",
+      "expected": "7,804.55",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 营业收入 col 2025年度"
+    },
+    {
+      "statement": "利润表扫描件仿真",
+      "item": "营业成本",
+      "period": "2025年度",
+      "expected": "5,902.17",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 营业成本 col 2025年度"
+    },
+    {
+      "statement": "利润表扫描件仿真",
+      "item": "税金及附加",
+      "period": "2025年度",
+      "expected": "88.91",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 税金及附加 col 2025年度"
+    },
+    {
+      "statement": "利润表扫描件仿真",
+      "item": "销售费用",
+      "period": "2025年度",
+      "expected": "421.36",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 销售费用 col 2025年度"
+    },
+    {
+      "statement": "利润表扫描件仿真",
+      "item": "净利润",
+      "period": "2025年度",
+      "expected": "1,044.28",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 净利润 col 2025年度"
+    }
+  ]
+}

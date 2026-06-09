@@ -1,0 +1,19 @@
+case_id: input_022_fake_pdf_extension
+name: 伪 PDF 扩展名异常设计用例
+description: Extra synthetic PDF; fake PDF extension abnormal design case. No fixture/error_result
+  observed yet.
+input_pdf: data/samples/input_022_fake_pdf_extension.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_022_fake_pdf_extension
+ground_truth: evaluation/ground_truth/input_022_fake_pdf_extension_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- abnormal
+- fake_pdf
+design_expectation: 不得臆造 INVALID_FILE_TYPE；等待实测 error_result。
+validations: []

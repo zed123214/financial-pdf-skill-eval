@@ -1,0 +1,33 @@
+# backend: fixture means run/import real_las or mock outputs into data/real_las_outputs/<case_id> first.
+# Synthetic cases intentionally omit data_authenticity + require_non_synthetic: true.
+# count_as_real_evaluation: false marks these as synthetic expansion scenarios.
+case_id: input_017_header_footer_noise
+name: 页眉页脚噪声财务表（合成）
+description: Synthetic eval PDF; source-of-truth in tools/generate_eval_pdfs.py；含页眉页脚噪声，准确率仅参考。
+input_pdf: data/samples/input_017_header_footer_noise.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_017_header_footer_noise
+ground_truth: evaluation/ground_truth/input_017_header_footer_noise_manual_gt.json
+count_as_real_evaluation: false
+tags:
+  - offline
+  - synthetic_pdf
+  - adversarial
+  - header_footer_noise
+validations:
+  -
+    type: output_contract
+    profile: standard
+  -
+    type: table_stat_ge
+    field: financial_table_count
+    expected: 1
+  -
+    type: metric_stat_ge
+    field: metric_record_count
+    expected: 5
+  -
+    type: gt_numeric_accuracy_ge
+    threshold: 0.5
+    skip_if_no_ground_truth: true

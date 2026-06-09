@@ -1,0 +1,47 @@
+{
+  "case_id": "byd_caibao",
+  "source": "todo_manual_verify",
+  "note": "Expected values are intentionally empty. They must be filled in by a human reviewer after reading the original BYD financial PDF. Auto-filling from financial_summary.json is FORBIDDEN — financial_summary.json is the Skill output and cannot be the ground truth.",
+  "metrics": [
+    {
+      "statement": "合并资产负债表",
+      "item": "货币资金",
+      "period": "12/31/2025",
+      "expected": "",
+      "page": 1,
+      "evidence": "todo_manual_verify"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "货币资金",
+      "period": "12/31/2024",
+      "expected": "",
+      "page": 1,
+      "evidence": "todo_manual_verify"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "应收账款",
+      "period": "12/31/2025",
+      "expected": "",
+      "page": 1,
+      "evidence": "todo_manual_verify"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "流动资产合计",
+      "period": "12/31/2025",
+      "expected": "",
+      "page": 1,
+      "evidence": "todo_manual_verify"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "12/31/2025",
+      "expected": "",
+      "page": 1,
+      "evidence": "todo_manual_verify"
+    }
+  ]
+}

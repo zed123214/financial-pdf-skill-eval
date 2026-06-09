@@ -1,0 +1,19 @@
+case_id: input_002_financial_complex_cross_page_table
+name: 跨页复杂财务表设计用例
+description: Synthetic eval PDF; complex cross-page financial table design case, no
+  imported fixture yet.
+input_pdf: data/samples/input_002_financial_complex_cross_page_table.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_002_financial_complex_cross_page_table
+ground_truth: evaluation/ground_truth/input_002_financial_complex_cross_page_table_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- complex
+- cross_page
+design_expectation: 跨页表连续性和表头识别；等待 fixture 后再跑 pipeline。
+validations: []

@@ -1,0 +1,4 @@
+# 展示 Dashboard 依赖（与主 requirements.txt 分离，保持核心评测框架轻量）。
+# 安装：pip install -r requirements-dashboard.txt
+streamlit>=1.28
+pandas>=1.5

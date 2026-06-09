@@ -1,0 +1,19 @@
+case_id: input_030_cover_only_no_table_report
+name: 封面叙述无表负样本
+description: Extra synthetic PDF; cover-only no-table design case, no imported fixture
+  yet.
+input_pdf: data/samples/input_030_cover_only_no_table_report.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_030_cover_only_no_table_report
+ground_truth: evaluation/ground_truth/input_030_cover_only_no_table_report_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- no_table
+- out_of_domain
+design_expectation: 不应输出 financial_table 或 metric_record；不参与 financial_accuracy。
+validations: []

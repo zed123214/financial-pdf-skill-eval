@@ -1,0 +1,14 @@
+{
+  "case_id": "sample",
+  "source": "template",
+  "metrics": [
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "2024-12-31",
+      "expected": "",
+      "page": null,
+      "evidence": "todo_manual_verify"
+    }
+  ]
+}

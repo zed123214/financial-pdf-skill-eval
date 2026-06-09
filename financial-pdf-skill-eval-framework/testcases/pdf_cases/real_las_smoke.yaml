@@ -1,0 +1,17 @@
+case_id: real_las_smoke
+name: real_las smoke test with explicit opt-in
+input_pdf: data/samples/sample.pdf
+backend: real_las
+parse_mode: detail
+output_profile: standard
+output_dir: outputs/real_las_smoke
+count_as_real_evaluation: true
+tags:
+  - real_las
+thresholds:
+  min_raw_table_count: 0
+validations:
+  - type: output_contract
+    profile: standard
+  - type: data_authenticity
+    expected_backend: real_las

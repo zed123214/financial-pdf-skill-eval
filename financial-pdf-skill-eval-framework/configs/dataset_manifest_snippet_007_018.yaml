@@ -1,0 +1,109 @@
+synthetic_pdf_cases:
+  -
+    case_id: input_007_income_statement
+    input_pdf: data/samples/input_007_income_statement.pdf
+    case_yaml: testcases/pdf_cases/input_007_income_statement.yaml
+    ground_truth: evaluation/ground_truth/input_007_income_statement_manual_gt.json
+    band: normal
+    pages: 1
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_008_cashflow_supplement
+    input_pdf: data/samples/input_008_cashflow_supplement.pdf
+    case_yaml: testcases/pdf_cases/input_008_cashflow_supplement.yaml
+    ground_truth: evaluation/ground_truth/input_008_cashflow_supplement_manual_gt.json
+    band: normal
+    pages: 1
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_009_balance_sheet_assets
+    input_pdf: data/samples/input_009_balance_sheet_assets.pdf
+    case_yaml: testcases/pdf_cases/input_009_balance_sheet_assets.yaml
+    ground_truth: evaluation/ground_truth/input_009_balance_sheet_assets_manual_gt.json
+    band: normal
+    pages: 1
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_010_bilingual_income_statement
+    input_pdf: data/samples/input_010_bilingual_income_statement.pdf
+    case_yaml: testcases/pdf_cases/input_010_bilingual_income_statement.yaml
+    ground_truth: evaluation/ground_truth/input_010_bilingual_income_statement_manual_gt.json
+    band: normal
+    pages: 2
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_011_cross_page_income_statement
+    input_pdf: data/samples/input_011_cross_page_income_statement.pdf
+    case_yaml: testcases/pdf_cases/input_011_cross_page_income_statement.yaml
+    ground_truth: evaluation/ground_truth/input_011_cross_page_income_statement_manual_gt.json
+    band: complex
+    pages: 2
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_012_no_border_financial_table
+    input_pdf: data/samples/input_012_no_border_financial_table.pdf
+    case_yaml: testcases/pdf_cases/input_012_no_border_financial_table.yaml
+    ground_truth: evaluation/ground_truth/input_012_no_border_financial_table_manual_gt.json
+    band: complex
+    pages: 1
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_013_multi_header_performance_table
+    input_pdf: data/samples/input_013_multi_header_performance_table.pdf
+    case_yaml: testcases/pdf_cases/input_013_multi_header_performance_table.yaml
+    ground_truth: evaluation/ground_truth/input_013_multi_header_performance_table_manual_gt.json
+    band: complex
+    pages: 1
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_014_main_table_with_notes
+    input_pdf: data/samples/input_014_main_table_with_notes.pdf
+    case_yaml: testcases/pdf_cases/input_014_main_table_with_notes.yaml
+    ground_truth: evaluation/ground_truth/input_014_main_table_with_notes_manual_gt.json
+    band: complex
+    pages: 2
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_015_low_dpi_scan_sim
+    input_pdf: data/samples/input_015_low_dpi_scan_sim.pdf
+    case_yaml: testcases/pdf_cases/input_015_low_dpi_scan_sim.yaml
+    ground_truth: evaluation/ground_truth/input_015_low_dpi_scan_sim_manual_gt.json
+    band: adversarial
+    pages: 1
+    image_only: true
+    count_as_real_evaluation: false
+  -
+    case_id: input_016_stamp_watermark_table
+    input_pdf: data/samples/input_016_stamp_watermark_table.pdf
+    case_yaml: testcases/pdf_cases/input_016_stamp_watermark_table.yaml
+    ground_truth: evaluation/ground_truth/input_016_stamp_watermark_table_manual_gt.json
+    band: adversarial
+    pages: 1
+    image_only: true
+    count_as_real_evaluation: false
+  -
+    case_id: input_017_header_footer_noise
+    input_pdf: data/samples/input_017_header_footer_noise.pdf
+    case_yaml: testcases/pdf_cases/input_017_header_footer_noise.yaml
+    ground_truth: evaluation/ground_truth/input_017_header_footer_noise_manual_gt.json
+    band: adversarial
+    pages: 1
+    image_only: false
+    count_as_real_evaluation: false
+  -
+    case_id: input_018_meeting_minutes_no_table
+    input_pdf: data/samples/input_018_meeting_minutes_no_table.pdf
+    case_yaml: testcases/pdf_cases/input_018_meeting_minutes_no_table.yaml
+    ground_truth: evaluation/ground_truth/input_018_meeting_minutes_no_table_manual_gt.json
+    band: boundary
+    pages: 1
+    image_only: false
+    count_as_real_evaluation: false

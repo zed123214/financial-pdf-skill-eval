@@ -1,0 +1,19 @@
+case_id: input_004_scanned_noisy_financial_table
+name: 扫描噪声财务表设计用例
+description: Synthetic eval PDF; noisy scanned financial table design case, no imported
+  fixture yet.
+input_pdf: data/samples/input_004_scanned_noisy_financial_table.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_004_scanned_noisy_financial_table
+ground_truth: evaluation/ground_truth/input_004_scanned_noisy_financial_table_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- scan
+- noisy
+design_expectation: OCR 噪声鲁棒性；等待真实输出目录。
+validations: []

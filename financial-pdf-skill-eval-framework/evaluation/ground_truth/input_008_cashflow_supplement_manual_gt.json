@@ -1,0 +1,61 @@
+{
+  "case_id": "input_008_cashflow_supplement",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "现金流量表补充资料",
+      "item": "净利润",
+      "period": "2025年度",
+      "expected": "3,118.40",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 净利润 col 2025年度"
+    },
+    {
+      "statement": "现金流量表补充资料",
+      "item": "加：信用减值损失",
+      "period": "2025年度",
+      "expected": "74.23",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 加：信用减值损失 col 2025年度"
+    },
+    {
+      "statement": "现金流量表补充资料",
+      "item": "固定资产折旧",
+      "period": "2025年度",
+      "expected": "642.55",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 固定资产折旧 col 2025年度"
+    },
+    {
+      "statement": "现金流量表补充资料",
+      "item": "财务费用",
+      "period": "2025年度",
+      "expected": "216.07",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 财务费用 col 2025年度"
+    },
+    {
+      "statement": "现金流量表补充资料",
+      "item": "经营性应收项目的减少",
+      "period": "2025年度",
+      "expected": "(385.62)",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 经营性应收项目的减少 col 2025年度"
+    },
+    {
+      "statement": "现金流量表补充资料",
+      "item": "经营活动产生的现金流量净额",
+      "period": "2025年度",
+      "expected": "3,665.63",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 经营活动产生的现金流量净额 col 2025年度"
+    }
+  ]
+}

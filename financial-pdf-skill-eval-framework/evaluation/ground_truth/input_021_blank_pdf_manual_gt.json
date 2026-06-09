@@ -1,0 +1,6 @@
+{
+  "case_id": "input_021_blank_pdf",
+  "source": "todo_manual_verify",
+  "note": "Design-only abnormal case. No data/real_las_outputs fixture or meta/error_result.json observed on 2026-06-04; do not invent expected_error/error_code.",
+  "metrics": []
+}

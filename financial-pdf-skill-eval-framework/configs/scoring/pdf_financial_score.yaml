@@ -1,0 +1,67 @@
+# P0 评分模型：仅确定性信号，不包含 LLM Judge。
+# 每个维度产出 1~10 的离散/连续分；weighted_score = Σ(score * weight)。
+#
+# 维度信号源：
+#   - output_contract     : assertions[type=output_contract] / validate_outputs
+#   - data_authenticity   : assertions[type=data_authenticity] + run_meta
+#   - table_structure     : quality_checks.table_statistics
+#   - financial_accuracy  : gt_eval_result.numeric_accuracy（仅 eligible GT）
+#   - abnormal_handling   : assertions[type=error_type_eq / no_ground_truth_allowed] 等
+#   - cost_performance    : run_meta.page_count / estimated_price / status
+
+profile: pdf_financial_score
+
+weights:
+  output_contract: 0.10
+  data_authenticity: 0.10
+  table_structure: 0.25
+  financial_accuracy: 0.35
+  abnormal_handling: 0.10
+  cost_performance: 0.10
+
+# 当 financial_accuracy = null（无 eligible GT）时，将其 35% 权重按比例
+# 重新分配给以下维度。比例之和必须 = 1。
+financial_accuracy_redistribute:
+  table_structure: 0.7142857
+  output_contract: 0.2857143
+
+# 布尔 / 分级映射（pass -> 10；fail 时按严重度给 1~4）。
+boolean_pass_score: 10
+severity_fail_score:
+  critical: 1
+  high: 2
+  medium: 3
+  low: 4
+
+# 表结构分级（按 financial_table_count）。
+table_structure:
+  zero: 3            # financial_table_count == 0 但仍有 raw_table_count -> 3 分
+  partial: 6         # 0 < financial_table_count < 2 -> 6 分
+  good: 8            # >= 2 -> 8 分
+  excellent: 10      # >= 4 且 unknown_table_count == 0 -> 10 分
+
+# Abnormal handling 给分：当 case 是 abnormal 期望 → 看是否命中 expected_error_code。
+abnormal_handling:
+  expected_match: 10
+  expected_miss: 3
+  not_applicable: 8   # 非 abnormal case 默认通过分（不参与拉低正常 case）
+
+# Cost performance：用 page_count 与 status。
+# - status != success → 1
+# - page_count <= 10 → 10
+# - 10 < page_count <= 30 → 8
+# - 30 < page_count <= 60 → 6
+# - 60 < page_count → 4
+cost_performance:
+  status_failed: 1
+  page_buckets:
+    - { max_pages: 10, score: 10 }
+    - { max_pages: 30, score: 8 }
+    - { max_pages: 60, score: 6 }
+    - { max_pages: 99999, score: 4 }
+
+# 等级阈值（最终 weighted_score）。
+level_thresholds:
+  good: 8.0
+  fair: 6.0
+# < fair -> "poor"

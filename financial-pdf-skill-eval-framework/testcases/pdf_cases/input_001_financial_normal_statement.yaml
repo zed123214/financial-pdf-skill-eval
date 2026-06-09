@@ -1,0 +1,19 @@
+case_id: input_001_financial_normal_statement
+name: 标准财务报表设计用例
+description: Synthetic eval PDF; normal financial statement design case, no imported
+  fixture yet.
+input_pdf: data/samples/input_001_financial_normal_statement.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_001_financial_normal_statement
+ground_truth: evaluation/ground_truth/input_001_financial_normal_statement_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- normal
+- income_statement
+design_expectation: 标准财务表格解析；等待 real_las fixture 后再启用输出契约断言。
+validations: []

@@ -1,0 +1,48 @@
+cases:
+  - case_id: missing_input_pdf
+    name: 输入文件不存在
+    input_pdf: data/samples/not_exists.pdf
+    backend: official_output_mock
+    parse_mode: detail
+    output_profile: standard
+    output_dir: outputs/abnormal_missing_input
+    expected_error:
+      error_code: FILE_NOT_FOUND
+    tags:
+      - abnormal
+
+  - case_id: invalid_file_type
+    name: 非 PDF 文件
+    input_pdf: data/abnormal/invalid.txt
+    backend: official_output_mock
+    parse_mode: detail
+    output_profile: standard
+    output_dir: outputs/abnormal_invalid_file_type
+    expected_error:
+      error_code: INVALID_FILE_TYPE
+    tags:
+      - abnormal
+
+  - case_id: missing_ground_truth
+    name: 缺少 Ground Truth
+    backend: fixture
+    output_profile: standard
+    output_dir: data/real_las_outputs/byd_caibao
+    ground_truth: evaluation/ground_truth/not_exists.json
+    expected_error:
+      error_code: NO_GROUND_TRUTH
+    tags:
+      - abnormal
+
+  - case_id: real_las_missing_key
+    name: real_las 缺少 LAS_API_KEY
+    input_pdf: data/samples/sample.pdf
+    backend: real_las
+    parse_mode: detail
+    output_profile: standard
+    output_dir: outputs/abnormal_missing_las_key
+    expected_error:
+      error_code: AUTH_MISSING
+    tags:
+      - abnormal
+      - real_las

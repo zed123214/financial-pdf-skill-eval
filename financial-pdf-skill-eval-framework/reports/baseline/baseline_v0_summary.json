@@ -1,0 +1,22 @@
+{
+  "skill_version": "skill_v0_baseline",
+  "created_at": "2026-05-30T18:50:00+08:00",
+  "cases": [
+    {
+      "case_id": "byd_real_las_fixture",
+      "weighted_score": 8.8,
+      "dimensions": {
+        "output_contract": 10,
+        "data_authenticity": 10,
+        "table_structure": 8,
+        "financial_accuracy": null,
+        "abnormal_handling": 8,
+        "cost_performance": 10
+      },
+      "level": "good",
+      "weighting_note": "financial_accuracy unavailable, redistributed",
+      "gt_status": "skipped"
+    }
+  ],
+  "notes": "fixture/offline baseline before LAS"
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://example.com/report.pdf",
+  "parse_mode": "detail",
+  "start_page": 1,
+  "num_pages": 10
+}

@@ -1,0 +1,24 @@
+skill:
+  name: financial-pdf-parse-doubao-eval
+  path: ../skills/financial-pdf-parse-doubao-eval
+  run_script: ../skills/financial-pdf-parse-doubao-eval/scripts/run_financial_parse.py
+  validate_script: ../skills/financial-pdf-parse-doubao-eval/scripts/validate_outputs.py
+  gt_eval_script: ../skills/financial-pdf-parse-doubao-eval/scripts/evaluate_with_ground_truth.py
+  evidence_script: ../skills/financial-pdf-parse-doubao-eval/scripts/collect_openclaw_evidence.py
+  final_report_script: ../skills/financial-pdf-parse-doubao-eval/scripts/generate_final_project_report.py
+
+default:
+  output_profile: standard
+  parse_mode: detail
+  backend: fixture
+  count_synthetic_as_real: false
+  allow_real_las: false
+  allow_real_openclaw: false
+
+paths:
+  samples_dir: data/samples
+  real_las_outputs_dir: data/real_las_outputs
+  mock_outputs_dir: data/mock_outputs
+  outputs_dir: outputs
+  reports_dir: reports
+  ground_truth_dir: evaluation/ground_truth

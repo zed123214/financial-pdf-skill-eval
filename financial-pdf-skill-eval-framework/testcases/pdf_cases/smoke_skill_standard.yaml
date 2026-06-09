@@ -1,0 +1,20 @@
+case_id: smoke_skill_standard
+name: Skill standard profile smoke test
+input_pdf: data/samples/sample.pdf
+backend: official_output_mock
+mock_dir: data/mock_outputs/smoke_skill_standard
+parse_mode: detail
+output_profile: standard
+output_dir: outputs/smoke_skill_standard
+ground_truth: evaluation/ground_truth/sample_gt_template.json
+count_as_real_evaluation: false
+tags:
+  - smoke
+  - offline
+thresholds:
+  min_raw_table_count: 0
+validations:
+  - type: output_contract
+    profile: standard
+  - type: data_authenticity
+    allow_synthetic: false

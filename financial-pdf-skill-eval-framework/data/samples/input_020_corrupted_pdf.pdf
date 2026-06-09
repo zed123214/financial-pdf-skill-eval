@@ -1,0 +1,5 @@
+%PDF-1.4
+% intentionally corrupted sample for parser error handling
+1 0 obj << /Type /Catalog >>
+stream
+this stream never closes and xref is missing

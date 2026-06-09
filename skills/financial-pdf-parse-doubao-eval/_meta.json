@@ -1,0 +1,16 @@
+{
+  "slug": "financial-pdf-parse-doubao-eval",
+  "version": "0.3.0",
+  "baseSkill": "byted-las-pdf-parse-doubao",
+  "baseSkillVersion": "1.0.1",
+  "category": "document-processing",
+  "tags": [
+    "pdf",
+    "financial-report",
+    "ocr",
+    "las",
+    "doubao",
+    "table-extraction",
+    "evaluation"
+  ]
+}

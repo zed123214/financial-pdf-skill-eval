@@ -1,0 +1,6 @@
+{
+  "case_id": "pioneer",
+  "source": "todo_manual_verify",
+  "note": "Reserved slot for the next sample case to grow the dataset towards 20-30 cases. Fill with manual expected values once the corresponding PDF is added under data/samples.",
+  "metrics": []
+}

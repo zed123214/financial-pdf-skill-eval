@@ -1,0 +1,19 @@
+case_id: input_019_encrypted_financial_report
+name: 加密 PDF 异常设计用例
+description: Extra synthetic PDF; encrypted abnormal design case. No fixture/error_result
+  observed yet.
+input_pdf: data/samples/input_019_encrypted_financial_report.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_019_encrypted_financial_report
+ground_truth: evaluation/ground_truth/input_019_encrypted_financial_report_manual_gt.json
+execution_status: design_only
+actually_run: false
+count_as_real_evaluation: false
+tags:
+- offline
+- synthetic_pdf
+- abnormal
+- encrypted
+design_expectation: 若未来产出 meta/error_result.json，再用真实 error_code 增加 error_type_eq。
+validations: []

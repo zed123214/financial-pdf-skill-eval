@@ -1,0 +1,33 @@
+# backend: fixture means run/import real_las or mock outputs into data/real_las_outputs/<case_id> first.
+# Synthetic cases intentionally omit data_authenticity + require_non_synthetic: true.
+# count_as_real_evaluation: false marks these as synthetic expansion scenarios.
+case_id: input_009_balance_sheet_assets
+name: 合并资产负债表资产侧（合成）
+description: Synthetic eval PDF; source-of-truth in tools/generate_eval_pdfs.py
+input_pdf: data/samples/input_009_balance_sheet_assets.pdf
+backend: fixture
+output_profile: standard
+output_dir: data/real_las_outputs/input_009_balance_sheet_assets
+ground_truth: evaluation/ground_truth/input_009_balance_sheet_assets_manual_gt.json
+count_as_real_evaluation: false
+tags:
+  - offline
+  - synthetic_pdf
+  - normal
+  - balance_sheet_assets
+validations:
+  -
+    type: output_contract
+    profile: standard
+  -
+    type: table_stat_ge
+    field: financial_table_count
+    expected: 1
+  -
+    type: metric_stat_ge
+    field: metric_record_count
+    expected: 5
+  -
+    type: gt_numeric_accuracy_ge
+    threshold: 0.8
+    skip_if_no_ground_truth: true

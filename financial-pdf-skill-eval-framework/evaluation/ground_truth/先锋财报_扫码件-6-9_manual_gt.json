@@ -1,0 +1,264 @@
+{
+  "case_id": "先锋财报_扫码件-6-9",
+  "source": "manual_verified",
+  "document": "先锋国际融资租赁有限公司 2025年12月31日合并/公司资产负债表（扫描件）",
+  "unit": "CNY",
+  "metrics": [
+    {
+      "statement": "合并资产负债表",
+      "item": "流动资产合计",
+      "period": "2025-12-31",
+      "expected": "7,496,108,063.60",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_流动资产合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "流动资产合计",
+      "period": "2024-12-31",
+      "expected": "8,056,838,284.60",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_流动资产合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "非流动资产合计",
+      "period": "2025-12-31",
+      "expected": "11,406,884,148.44",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_非流动资产合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "非流动资产合计",
+      "period": "2024-12-31",
+      "expected": "11,527,025,757.96",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_非流动资产合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "2025-12-31",
+      "expected": "18,902,992,212.04",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_资产总计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "2024-12-31",
+      "expected": "19,583,864,042.56",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_资产总计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "流动负债合计",
+      "period": "2025-12-31",
+      "expected": "8,709,238,067.64",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_流动负债合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "流动负债合计",
+      "period": "2024-12-31",
+      "expected": "5,659,626,778.62",
+      "page": 1,
+      "evidence": "uploaded_pdf_page_1_合并资产负债表_流动负债合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "非流动负债合计",
+      "period": "2025-12-31",
+      "expected": "7,738,967,163.39",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_非流动负债合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "非流动负债合计",
+      "period": "2024-12-31",
+      "expected": "11,456,829,899.03",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_非流动负债合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "负债合计",
+      "period": "2025-12-31",
+      "expected": "16,448,205,231.03",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_负债合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "负债合计",
+      "period": "2024-12-31",
+      "expected": "17,116,456,677.65",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_负债合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "所有者权益合计",
+      "period": "2025-12-31",
+      "expected": "2,454,786,981.01",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_所有者权益合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "所有者权益合计",
+      "period": "2024-12-31",
+      "expected": "2,467,407,364.91",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_所有者权益合计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "负债和所有者权益总计",
+      "period": "2025-12-31",
+      "expected": "18,902,992,212.04",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_负债和所有者权益总计"
+    },
+    {
+      "statement": "合并资产负债表",
+      "item": "负债和所有者权益总计",
+      "period": "2024-12-31",
+      "expected": "19,583,864,042.56",
+      "page": 2,
+      "evidence": "uploaded_pdf_page_2_合并资产负债表_负债和所有者权益总计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "流动资产合计",
+      "period": "2025-12-31",
+      "expected": "7,484,582,437.81",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_流动资产合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "流动资产合计",
+      "period": "2024-12-31",
+      "expected": "8,093,007,579.21",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_流动资产合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "非流动资产合计",
+      "period": "2025-12-31",
+      "expected": "11,411,884,148.44",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_非流动资产合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "非流动资产合计",
+      "period": "2024-12-31",
+      "expected": "11,532,025,757.96",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_非流动资产合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "资产总计",
+      "period": "2025-12-31",
+      "expected": "18,896,466,586.25",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_资产总计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "资产总计",
+      "period": "2024-12-31",
+      "expected": "19,625,033,337.17",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_资产总计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "流动负债合计",
+      "period": "2025-12-31",
+      "expected": "8,709,235,633.83",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_流动负债合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "流动负债合计",
+      "period": "2024-12-31",
+      "expected": "5,709,481,993.56",
+      "page": 3,
+      "evidence": "uploaded_pdf_page_3_公司资产负债表_流动负债合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "非流动负债合计",
+      "period": "2025-12-31",
+      "expected": "7,738,967,163.39",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_非流动负债合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "非流动负债合计",
+      "period": "2024-12-31",
+      "expected": "11,456,829,899.03",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_非流动负债合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "负债合计",
+      "period": "2025-12-31",
+      "expected": "16,448,202,797.22",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_负债合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "负债合计",
+      "period": "2024-12-31",
+      "expected": "17,166,311,892.59",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_负债合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "所有者权益合计",
+      "period": "2025-12-31",
+      "expected": "2,448,263,789.03",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_所有者权益合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "所有者权益合计",
+      "period": "2024-12-31",
+      "expected": "2,458,721,444.58",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_所有者权益合计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "负债和所有者权益总计",
+      "period": "2025-12-31",
+      "expected": "18,896,466,586.25",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_负债和所有者权益总计"
+    },
+    {
+      "statement": "公司资产负债表",
+      "item": "负债和所有者权益总计",
+      "period": "2024-12-31",
+      "expected": "19,625,033,337.17",
+      "page": 4,
+      "evidence": "uploaded_pdf_page_4_公司资产负债表_负债和所有者权益总计"
+    }
+  ]
+}

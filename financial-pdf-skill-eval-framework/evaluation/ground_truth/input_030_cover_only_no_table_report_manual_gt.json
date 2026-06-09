@@ -1,0 +1,6 @@
+{
+  "case_id": "input_030_cover_only_no_table_report",
+  "source": "todo_manual_verify",
+  "note": "Design-only no-table/out-of-domain case. metrics[] is intentionally empty and excluded from financial_accuracy until a fixture is produced and manually reviewed.",
+  "metrics": []
+}

@@ -1,0 +1,23 @@
+{
+  "company": "示例融资租赁有限公司",
+  "document_type": "financial_report",
+  "period": "2026Q1",
+  "metrics": [
+    {
+      "statement": "合并资产负债表",
+      "item": "资产总计",
+      "period": "3/31/2026",
+      "value": "20,262,595,475.25",
+      "normalized_value": "20262595475.25",
+      "table_id": "table_001"
+    },
+    {
+      "statement": "合并利润表",
+      "item": "净利润",
+      "period": "2026Q1",
+      "value": "(18,970,274.67)",
+      "normalized_value": "-18970274.67",
+      "table_id": "table_002"
+    }
+  ]
+}

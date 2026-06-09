@@ -1,0 +1,10 @@
+{
+  "byd_real_las_fixture": {
+    "baseline": 8.8,
+    "candidate": 8.8
+  },
+  "huadian_real_las_fixture": {
+    "baseline": null,
+    "candidate": 4.9
+  }
+}

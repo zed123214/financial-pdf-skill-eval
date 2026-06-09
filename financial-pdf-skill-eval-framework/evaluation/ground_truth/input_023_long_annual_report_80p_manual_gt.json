@@ -1,0 +1,6 @@
+{
+  "case_id": "input_023_long_annual_report_80p",
+  "source": "todo_manual_verify",
+  "note": "Design-only case registered on 2026-06-04. No fixture is present, so this GT is a skeleton and does not enter financial_accuracy.",
+  "metrics": []
+}

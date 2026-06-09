@@ -1,0 +1,1 @@
+This is not a PDF file. Used by abnormal_cases.yaml::invalid_file_type to verify INVALID_FILE_TYPE handling.

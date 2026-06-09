@@ -1,0 +1,61 @@
+{
+  "case_id": "input_013_multi_header_performance_table",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "分部业绩变动表",
+      "item": "工业软件-营业总收入本期额",
+      "period": "2025年度",
+      "expected": "8,410.22",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 工业软件 col 2025年度"
+    },
+    {
+      "statement": "分部业绩变动表",
+      "item": "工业软件-净利润本期额",
+      "period": "2025年度",
+      "expected": "1,925.31",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 工业软件 col 2025年度"
+    },
+    {
+      "statement": "分部业绩变动表",
+      "item": "设备云平台-营业总收入本期额",
+      "period": "2025年度",
+      "expected": "5,632.45",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 设备云平台 col 2025年度"
+    },
+    {
+      "statement": "分部业绩变动表",
+      "item": "设备云平台-净利润本期额",
+      "period": "2025年度",
+      "expected": "1,108.74",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 设备云平台 col 2025年度"
+    },
+    {
+      "statement": "分部业绩变动表",
+      "item": "合计-营业总收入本期额",
+      "period": "2025年度",
+      "expected": "18,205.77",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 合计 col 2025年度"
+    },
+    {
+      "statement": "分部业绩变动表",
+      "item": "合计-净利润本期额",
+      "period": "2025年度",
+      "expected": "3,840.47",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 合计 col 2025年度"
+    }
+  ]
+}

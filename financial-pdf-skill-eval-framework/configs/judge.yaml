@@ -1,0 +1,24 @@
+# Assessment-Skill Judge（LLM-as-a-Judge）配置。
+#
+# 默认 enabled=false：完全关闭 Judge，pipeline 行为与 P0 一致，
+# 不调用任何 API、不写 judge_result.json。
+#
+# 行为矩阵（见 judge/llm_judge.py）：
+#   enabled=false              -> 不调用、不写文件、score_sources.llm_judge=[]
+#   enabled=true + mode=mock   -> 读 mock_fixture，写 judge_result.json (mode=mock)
+#   enabled=true + mode=live   -> 有 JUDGE_API_KEY 调 API；无 Key 降级为 skipped
+#   enabled=true + mode=skip   -> 写 judge_result.json (mode=skipped)，便于测试
+
+enabled: false
+mode: mock          # mock | live | skip（仅 enabled=true 时生效）
+mock_fixture: judge/fixtures/byd_caibao_judge_mock.json
+judge_version: assessment_skill_v1
+
+# live 模式参数（无 JUDGE_API_KEY 环境变量时自动降级为 skipped）。
+live:
+  api_key_env: JUDGE_API_KEY
+  model: deepseek-chat
+  endpoint: "https://api.deepseek.com/chat/completions"
+  timeout_seconds: 60
+  max_excerpt_chars: 12000
+  temperature: 0.2

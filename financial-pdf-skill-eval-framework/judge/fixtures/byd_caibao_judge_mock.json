@@ -1,0 +1,21 @@
+{
+  "case_id": "byd_caibao",
+  "judge_version": "assessment_skill_v1",
+  "reading_order_score": 0.85,
+  "table_structure_score": 0.7,
+  "evidence_alignment_score": 0.9,
+  "deduction_items": [
+    {
+      "dimension": "table_structure",
+      "reason": "多级表头未展开为稳定二维结构，period 列依赖列名字符串而非独立表头层级",
+      "evidence": "table_002"
+    },
+    {
+      "dimension": "reading_order",
+      "reason": "资产/负债两张子表被拆为 table_001/table_002，跨表的合并资产负债表阅读连续性需人工拼接",
+      "evidence": "table_001,table_002"
+    }
+  ],
+  "confidence": 0.76,
+  "mode": "mock"
+}

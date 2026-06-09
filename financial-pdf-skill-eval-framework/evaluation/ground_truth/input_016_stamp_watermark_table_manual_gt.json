@@ -1,0 +1,52 @@
+{
+  "case_id": "input_016_stamp_watermark_table",
+  "source": "todo_manual_verify",
+  "note": "Synthetic PDF from tools/generate_eval_pdfs.py CASES[]; promote to manual_verified after human review.",
+  "metrics": [
+    {
+      "statement": "合并现金流量表",
+      "item": "销售商品、提供劳务收到的现金",
+      "period": "2025年度",
+      "expected": "11,208.44",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 销售商品、提供劳务收到的现金 col 2025年度"
+    },
+    {
+      "statement": "合并现金流量表",
+      "item": "收到的税费返还",
+      "period": "2025年度",
+      "expected": "186.50",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 收到的税费返还 col 2025年度"
+    },
+    {
+      "statement": "合并现金流量表",
+      "item": "购买商品、接受劳务支付的现金",
+      "period": "2025年度",
+      "expected": "7,642.19",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 购买商品、接受劳务支付的现金 col 2025年度"
+    },
+    {
+      "statement": "合并现金流量表",
+      "item": "支付给职工以及为职工支付的现金",
+      "period": "2025年度",
+      "expected": "1,024.86",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 支付给职工以及为职工支付的现金 col 2025年度"
+    },
+    {
+      "statement": "合并现金流量表",
+      "item": "经营活动产生的现金流量净额",
+      "period": "2025年度",
+      "expected": "2,727.89",
+      "unit": "万元",
+      "page": 1,
+      "evidence": "main_table 经营活动产生的现金流量净额 col 2025年度"
+    }
+  ]
+}

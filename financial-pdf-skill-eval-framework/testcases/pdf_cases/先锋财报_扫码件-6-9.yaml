@@ -1,0 +1,37 @@
+case_id: "先锋财报_扫码件-6-9"
+name: "先锋财报 扫描件 6-9 real_las fixture"
+backend: fixture
+output_profile: standard
+output_dir: "data/real_las_outputs/先锋财报_扫码件-6-9"
+ground_truth: "evaluation/ground_truth/先锋财报_扫码件-6-9_manual_gt.json"
+
+# 该 PDF 是财务报表扫描件，且下面提供了人工 GT，可参与真实准确率评测
+count_as_real_evaluation: true
+
+tags:
+  - offline
+  - real_las_fixture
+  - financial_report
+  - scanned_pdf
+  - balance_sheet
+  - fixture
+
+validations:
+  - type: output_contract
+    profile: standard
+
+  - type: data_authenticity
+    require_non_synthetic: true
+    expected_backend: real_las
+
+  - type: table_stat_ge
+    field: raw_table_count
+    expected: 1
+
+  - type: metric_stat_ge
+    field: metric_record_count
+    expected: 1
+
+  - type: gt_numeric_accuracy_ge
+    threshold: 0.80
+    skip_if_no_ground_truth: true

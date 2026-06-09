@@ -1,0 +1,59 @@
+{
+  "case_id": "paper_rubric_learnable_assessment",
+  "source": "todo_manual_verify",
+  "note": "学术论文 Table 1（QWK）锚点。晋升 manual_verified 前不参与 financial_accuracy；当前用 text_contains + 表统计断言。数值来自 LAS 解析 normalized_tables，需人工复核后改 source。",
+  "metrics": [
+    {
+      "statement": "Table 1 QWK",
+      "item": "item 1",
+      "period": "w/o rubric",
+      "expected": "0.698",
+      "unit": "QWK",
+      "page": 6,
+      "evidence": "normalized_tables table_001 row item 1 col w/o rubric"
+    },
+    {
+      "statement": "Table 1 QWK",
+      "item": "item 1",
+      "period": "weak s_best",
+      "expected": "0.793",
+      "unit": "QWK",
+      "page": 6,
+      "evidence": "normalized_tables weak s_best column"
+    },
+    {
+      "statement": "Table 1 QWK",
+      "item": "item 2",
+      "period": "w/o rubric",
+      "expected": "0.431",
+      "unit": "QWK",
+      "page": 6,
+      "evidence": "normalized_tables item 2 w/o rubric"
+    },
+    {
+      "statement": "Table 1 QWK",
+      "item": "item 10",
+      "period": "w/ expert",
+      "expected": "0.620",
+      "unit": "QWK",
+      "page": 6,
+      "evidence": "normalized_tables item 10 w/ expert"
+    },
+    {
+      "statement": "正文锚点",
+      "item": "论文标题",
+      "period": "n/a",
+      "expected": "",
+      "page": 1,
+      "evidence": "parsed.md 应含 Learnable Assessment Skills（由 text_contains 断言覆盖）"
+    },
+    {
+      "statement": "正文锚点",
+      "item": "数据集名称",
+      "period": "n/a",
+      "expected": "",
+      "page": 1,
+      "evidence": "parsed.md 应含 ASAP-SAS（由 text_contains 断言覆盖）"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "output_dir": "outputs/financial_skill_demo",
+  "raw": {
+    "submit_json": "raw/submit.json",
+    "result_json": "raw/result.json",
+    "parsed_md": "raw/parsed.md",
+    "pages_detail_json": "raw/pages_detail.json"
+  },
+  "normalized": {
+    "cleaned_md": "normalized/cleaned.md",
+    "normalized_tables_json": "normalized/normalized_tables.json",
+    "financial_summary_json": "normalized/financial_summary.json"
+  },
+  "evaluation": {
+    "quality_checks_json": "evaluation/quality_checks.json",
+    "evaluation_report_md": "evaluation/evaluation_report.md"
+  },
+  "meta": {
+    "run_meta_json": "meta/run_meta.json",
+    "task_id_txt": "meta/task_id.txt",
+    "error_result_json": "meta/error_result.json"
+  }
+}
