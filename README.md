@@ -323,11 +323,15 @@ docker run --rm \
 
 ## 关键文档
 
-| 文档 | 路径 |
-|---|---|
-| Skill 文档 | [skills/financial-pdf-parse-doubao-eval/SKILL.md](skills/financial-pdf-parse-doubao-eval/SKILL.md) |
-| 评测框架说明 | [financial-pdf-skill-eval-framework/README_zh.md](financial-pdf-skill-eval-framework/README_zh.md) |
-
+| 文档           | 路径                                                                                                                              |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| Skill 文档     | [`skills/financial-pdf-parse-doubao-eval/SKILL.md`](skills/financial-pdf-parse-doubao-eval/SKILL.md)                            |
+| 评测框架说明       | [`financial-pdf-skill-eval-framework/README_zh.md`](financial-pdf-skill-eval-framework/README_zh.md)                            |
+| 最终项目报告       | [`reports/final/final_project_report_skill.md`](financial-pdf-skill-eval-framework/reports/final/final_project_report_skill.md) |
+| 评测摘要         | [`evaluation_summary.md`](financial-pdf-skill-eval-framework/reports/markdown/evaluation_summary.md)                            |
+| 评分汇总         | [`score_summary.md`](financial-pdf-skill-eval-framework/reports/markdown/score_summary.md)                                      |
+| 调用证据         | [`openclaw_invocation_log.md`](financial-pdf-skill-eval-framework/reports/markdown/openclaw_invocation_log.md)                  |
+| Dashboard 数据 | 本地运行 `python run.py --build-dashboard-bundle` 生成                                                                                |
 
 ## License
 
