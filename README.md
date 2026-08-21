@@ -327,6 +327,11 @@ docker run --rm \
 |---|---|
 | Skill 文档 | [skills/financial-pdf-parse-doubao-eval/SKILL.md](skills/financial-pdf-parse-doubao-eval/SKILL.md) |
 | 评测框架说明 | [financial-pdf-skill-eval-framework/README_zh.md](financial-pdf-skill-eval-framework/README_zh.md) |
+
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
 | 最终项目报告 | [financial-pdf-skill-eval-framework/reports/final/final_project_report_skill.md](financial-pdf-skill-eval-framework/reports/final/final_project_report_skill.md) |
 | 评测摘要 | [financial-pdf-skill-eval-framework/reports/markdown/evaluation_summary.md](financial-pdf-skill-eval-framework/reports/markdown/evaluation_summary.md) |
 | 评分汇总 | [financial-pdf-skill-eval-framework/reports/markdown/score_summary.md](financial-pdf-skill-eval-framework/reports/markdown/score_summary.md) |
