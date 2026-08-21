@@ -332,9 +332,4 @@ docker run --rm \
 ## License
 
 MIT License. See [LICENSE](LICENSE).
-| 最终项目报告 | [financial-pdf-skill-eval-framework/reports/final/final_project_report_skill.md](financial-pdf-skill-eval-framework/reports/final/final_project_report_skill.md) |
-| 评测摘要 | [financial-pdf-skill-eval-framework/reports/markdown/evaluation_summary.md](financial-pdf-skill-eval-framework/reports/markdown/evaluation_summary.md) |
-| 评分汇总 | [financial-pdf-skill-eval-framework/reports/markdown/score_summary.md](financial-pdf-skill-eval-framework/reports/markdown/score_summary.md) |
-| 调用证据 | [financial-pdf-skill-eval-framework/reports/markdown/openclaw_invocation_log.md](financial-pdf-skill-eval-framework/reports/markdown/openclaw_invocation_log.md) |
-| Dashboard 数据 | 本地生成：`python run.py --build-dashboard-bundle` → `reports/dashboard/dashboard_bundle.json`（不入库） |
 
